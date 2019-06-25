@@ -10,7 +10,9 @@ interval keyword.
 
 To use these example scripts, simply start the random_live_data script.
 
+```
 python random_live_data.py 15 0.2
+```
 
 This script generates a 2 column file of time and 15 second period sine wave
 amplitude data with some Gaussian noise (0.2 in scale) called testlive_data.dat.
@@ -19,7 +21,9 @@ the script. OJO This script uses a neverending while loop. Exercise caution.
 
 In a separate shell or terminal, run the live graph script.
 
+```
 python live_graph.py test_live_data.dat 1000
+```
 
 This script runs the FuncAnimation function and contains the definition of the
 animate function--graph. As data is added to the pointed to file in the
