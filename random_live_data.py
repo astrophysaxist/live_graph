@@ -18,14 +18,16 @@ if __name__ == "__main__":
     filename = "test_live_data.dat"
     dt = 1.0 #s
     s = lambda t: np.sin((2*pi/period)*t)
+    count = 0
     
 
-    while True:
+    while count<100:
         
         #Generate sine wave amplitude data and save to file ever delta t
         t = time.time()
         a = s(t)*(1.0+np.random.normal(0,scale=noise))
         time.sleep(dt)
+        count += 1
         try:
             if not os.path.isfile(filename):
                 f = open(filename,'w')

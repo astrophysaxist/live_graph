@@ -17,8 +17,8 @@ python random_live_data.py 15 0.2
 This script generates a 2 column file of time and 15 second period sine wave
 amplitude data with some Gaussian noise (0.2 in scale) called
 *test_live_data.dat*. Values are added to this script every 1.0 s as defined by
-the dt variable in the script. **OJO This script uses a neverending while loop.
-Exercise caution.**
+the dt variable in the script. **OJO This script uses a while loop that
+terminates after 100 evaluations.**
 
 In a separate shell or terminal, run the live graph script.
 
